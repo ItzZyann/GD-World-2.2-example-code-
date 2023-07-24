@@ -16,5 +16,5 @@ public:
 
 class CreateParticlePopup : public FLAlertLayer {
 public:
- static CreateParticlePopup* create(ParticleGameObject*, CCArray*);
+ static CreateParticlePopup* create(ParticleGameObject*, cocos2d::CCArray*);
 };

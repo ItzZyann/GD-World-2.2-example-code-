@@ -6,5 +6,7 @@
 class EditLevelLayer : public cocos2d::CCLayer {
 public:
  virtual bool init(GJGameLevel*);
- void onCreateParticle(CCObject*);
+ 
+ // Fix
+ void onCreateParticle(cocos2d::CCObject*);
 };
