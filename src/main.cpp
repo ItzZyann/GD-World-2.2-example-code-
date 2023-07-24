@@ -1,6 +1,14 @@
 // TODO //
 #include "include.h"
 
+// Yummy particle editor
+void EditLevelLayer::onCreateParticle(CCObject*) {
+ auto particleObject = ParticleGameObject::create();
+ auto particleArray = CCArray::create();
+ 
+ CreateParticlePopup::create(particleObject, particleArray)->show(); 
+}
+
 bool (*EditLevelLayer_init)(EditLevelLayer*, GJGameLevel*);
 bool EditLevelLayer_initH(EditLevelLayer* self, GJGameLevel* lvl) {
  if(!EditLevelLayer_init(self, lvl)) return false;
